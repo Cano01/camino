@@ -1,3 +1,15 @@
 .header {
     background-color: black;
 }
+
+button {
+    border-radius: 1ch;
+    width: 100%;
+}
+
+a, a:link, a:visited {
+    color: #000000;
+    text-decoration: none;
+    background-color: #778899;
+    
+  }

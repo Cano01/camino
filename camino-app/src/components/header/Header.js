@@ -1,15 +1,54 @@
-
-
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
+import { useHistory } from 'react-router-dom'
 import './Header.css'
 
-class Header extends Component{
-
-    name(params) {
-        console.log("hello world");  
+function HomeButton(path, text) {
+    const history = useHistory();
+    function handle(){
+        history.push(path);
     }
+    return(
+        <button onClick={handle}>
+            {text}
+        </button>
+    );
+}
 
+function Button({path, text}) {
+    const history = useHistory();
+    function handle(){
+        history.push(path);
+    }
+    return(
+        <button onClick={handle}>
+            {text}
+        </button>
+    );
+}
+
+function AboutButton() {
+    const history = useHistory();
+    function handle(){history.push("/About");}
+    return(<button onClick={handle}>About</button>);
+}
+
+function RoutesButton() {
+    const history = useHistory();
+    function handle(){history.push("/Routes");}
+    return(<button onClick={handle}>Routes</button>);
+}
+class Example extends Component{
+    render(){
+        return(
+            <div>
+                <HomeButton path="path/..."></HomeButton>
+            </div>
+        );
+    }
+}
+
+class Header extends Component{    
+    
     render() {
         return (
             <div className = "header"> 
@@ -17,17 +56,16 @@ class Header extends Component{
                 <nav>
                     <ul>
                         <li>
-                            <Button variant="contained" color="primary" href="/">Home</Button>
+                            <Button path="/" text="Home"/>
                         </li>
                         <li>
-                            <Button variant="contained" color="primary" href="/About">About</Button>
+                            <Button path="/Routes" text="Routes"/>
                         </li>
                         <li>
-                            <Button variant="contained" color="primary" href="/Routes">Routes</Button>
+                            <Button path="/About" text="About"/>
                         </li>
                     </ul>
                 </nav>
-                
             </div>
         );
     }
