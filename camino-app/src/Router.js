@@ -15,7 +15,7 @@ class Router extends Component{
                 <BrowserRouter>
                     <Header/>
                     <Switch>
-                        <Route exact path="/" component={ Home }/>
+                        <Route exact path="/Home" component={ Home }/>
                         <Route path="/About"  component={ About }/>
                         <Route path="/Routes" component={ Routes }/>
                     </Switch>

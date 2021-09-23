@@ -1,0 +1,19 @@
+
+.footer{
+    background-color:azure;
+    
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 75%;
+    margin: auto;
+}
+
+.grid-element{
+    border: 1px solid rgba(black, black, black, black);
+    text-decoration: none;
+    text-align: left;
+}

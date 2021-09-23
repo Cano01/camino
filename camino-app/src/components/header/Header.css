@@ -3,13 +3,25 @@
 }
 
 button {
-    border-radius: 1ch;
-    width: 100%;
+    width: 100px;
+    height: 100%;
+    border: 0px;
+    cursor: pointer;
 }
 
-a, a:link, a:visited {
-    color: #000000;
-    text-decoration: none;
-    background-color: #778899;
-    
-  }
+button:hover{
+    background-color: antiquewhite;
+}
+
+.hul {
+    background-color:azure;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-top-right-radius: 10px;
+}
+
+.hli {
+    display: inline-block;
+    height: 100%;
+}
