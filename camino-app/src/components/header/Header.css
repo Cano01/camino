@@ -13,6 +13,11 @@ button:hover{
     background-color: antiquewhite;
 }
 
+li{
+    text-decoration: none;
+}
+
+
 .hul {
     background-color:azure;
     width: 50%;

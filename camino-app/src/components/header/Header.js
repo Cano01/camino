@@ -12,13 +12,19 @@ class Header extends Component{
                 <nav>
                     <ul className="hul">
                         <li className="hli">
-                            <Button path="/Home" text="Home"/>
+                            <Button path="/" text="Artists"/>
                         </li>
                         <li className="hli">
-                            <Button path="/Routes" text="Routes"/>
+                            <Button path="/Routes" text="Loved"/>
                         </li>
                         <li className="hli">
-                            <Button path="/About" text="About"/>
+                            <Button path="/About" text="Cards"/>
+                        </li>
+                        <li className="hli">
+                            <Button text="Glass"/>
+                        </li>
+                        <li className="hli">
+                            <Button text="About"/>
                         </li>
                     </ul>
                 </nav>
